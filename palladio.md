@@ -5,7 +5,7 @@ might be somewhat limited, the selling point of this tool is the ease with which
 be generated and the breath of type of visualizations. The same data can be quickly viewed in a
 variety of ways.
 
-![palladio map image](/img/palladio.png)
+![image of mapping visualization feature on palladio, showing a map of connections between locations spanning the atlantic ocean](/img/palladio.png)
 
 See tool's [homepage](https://hdlab.stanford.edu/palladio/) and [tutorials](https://hdlab.stanford.edu/palladio/help/). 
 
