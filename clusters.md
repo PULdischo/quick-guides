@@ -1,4 +1,4 @@
-# Adroit Cluster [quick guide]
+# Adroit Cluster
 The Adroit Cluster at Princeton University offers high powered
 computing capabilities to students, staff, faculty and other
 researchers at Princeton. 
