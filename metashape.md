@@ -2,7 +2,7 @@
 Agisoft Metashape processes digital images and generates 3D spatial data through a process called photogrammetry. Photogrammetry is increasingly used in cultural heritage contexts to document, share, and recontextualize historical artifacts. Depending on the quality of the images and use of calibrated scale bars, it's possible to generate 3D models with measurement data with sub-millimeter accuracy. 
 Metashape is a proprietary and commonly used program for photogrammetry. There are both Standard and Pro versions of Metashape, with Metashape Pro needed to add scale bar or geospatial data. This guide will focus on the basic process of generating a 3D model without measurement data and can therefore be used for Metashape Standard or Metashape Pro. 
 
-Visit Agisoft Metashape's[website](https://www.agisoft.com/), [documentation](https://agisoft.freshdesk.com/support/solutions), [user manuals](https://www.agisoft.com/downloads/user-manuals/) and [downloads page](https://www.agisoft.com/downloads/installer/) for more information.
+Visit Agisoft Metashape's [website](https://www.agisoft.com/), [documentation](https://agisoft.freshdesk.com/support/solutions), [user manuals](https://www.agisoft.com/downloads/user-manuals/) and [downloads page](https://www.agisoft.com/downloads/installer/) for more information.
 
 ## Digital Photographs
 To use Metashape, you need a series of clear, overlapping photographs. The software will triangulate the images to determine spatial data and generate a 3D model. Your photographs are your raw data and it's important to keep them organized in a folder for later use or reprocessing.
