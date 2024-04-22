@@ -2,7 +2,7 @@
 Collection of "quick-guides" for various digital tools and platforms
 
 ## Contributing
-Anyone is invited to contribute to quick-guides, but inclusion in the repository is subject to PUL DiScho's review. 
+Anyone is invited to contribute to quick-guides, but inclusion in the repository is subject to PUL DiScho's review. Additionally, we expect that all contributors will maintain their guides and make relevant updates when software and tools inevitably change over time.
 
 We prefer guides on tools that are open source, but accept guides on proprietary tools that are industry standards (for example, tools like [ArcGIS Storymaps](https://storymaps.arcgis.com/) and [oXygen XML Editor](https://www.oxygenxml.com/)). 
 
