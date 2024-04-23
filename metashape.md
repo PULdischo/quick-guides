@@ -1,6 +1,6 @@
 # Metashape
-Agisoft Metashape processes digital images and generates 3D spatial data through a process called photogrammetry. Photogrammetry is increasingly used in cultural heritage contexts to document, share, and recontextualize historical artifacts. Depending on the quality of the images and use of calibrated scale bars, it's possible to generate 3D models with measurement data with sub-millimeter accuracy. 
-Metashape is a proprietary and commonly used program for photogrammetry. There are both Standard and Pro versions of Metashape, with Metashape Pro needed to add scale bar or geospatial data. This guide will focus on the basic process of generating a 3D model without measurement data and can therefore be used for Metashape Standard or Metashape Pro. 
+Agisoft Metashape processes digital images and generates 3D spatial data through a process called photogrammetry. Photogrammetry is increasingly used in cultural heritage contexts to document, share, and recontextualize historical artifacts. Depending on the quality of the images and use of calibrated scale bars, it's possible to generate 3D models with sub-millimeter accuracy. 
+Metashape is a popular, proprietary program for photogrammetry. There are both Standard and Pro versions of Metashape, with Metashape Pro needed to add scale bar or geospatial data. This guide will focus on the basic process of generating a 3D model without measurement data and can therefore be used for Metashape Standard or Metashape Pro. 
 
 Visit Agisoft Metashape's [website](https://www.agisoft.com/), [documentation](https://agisoft.freshdesk.com/support/solutions), [user manuals](https://www.agisoft.com/downloads/user-manuals/) and [downloads page](https://www.agisoft.com/downloads/installer/) for more information.
 
@@ -42,7 +42,7 @@ When the processing is done, you will see in the Model View a representation of 
 
 ![Screenshot of Model View showing tie points and camera positions](/img/metashape3.png)
 
-Your project now has vital spatial data that will be used to make different outputs, such as a dense point cloud, 3D model, or digital elevation model. We will cover the first in this guide.
+Your project now has vital spatial data that will be used to make different outputs, such as a 3D model, point cloud, or digital elevation model. We will cover the first in this guide.
 
 ### Build Model
 When you build the model, you are generating a digital object consisting of a mesh of spatial data. You can export these in a variety of formats for further analysis, modeling, or use in other digital or immersive contexts. To build a model in Metashape, select 'Workflow > Build Model...'. A pop-up window will appear with some general and advanced parameters. The default settings should be fine for most projects.
