@@ -9,7 +9,7 @@ We prefer guides on tools that are open source, but accept guides on proprietary
 For members of the PUL organization, follow these steps to contribute a guide:
 - at the top of this page, under the title "quick-guides," select "create new file" (next to green "code" button).
 - this option will open a new window where you can add content.
-- at the top, name your file after your tool with an .md extensition, for example, "palladio.md".
+- at the top, name your file after your tool with an .md extension, for example, "palladio.md".
 - add content then press "commit changes". Make sure you include a commit message (but no need to add an extended description).
   - for images: add image files to the /img/ folder in the root (the first, main folder) of the repository.
   - in your markdown, make sure all of your image file paths lead to this folder.
