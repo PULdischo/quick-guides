@@ -62,3 +62,6 @@ Texture is like a wrapper that goes around a model's 3D polygon mesh. Using phot
 
 ### Export Model
 To export your model to share or use in another application, select the 3D model in the Workspace tab and right click. A new menu will appear; select 'Export Model...'. You'll have the option to save the model in a variety of file formats on your local computer.
+
+## Contributors
+This guide was created by Jen Grayburn.
