@@ -1,20 +1,16 @@
 # Adroit Cluster
-The Adroit Cluster at Princeton University offers high powered
-computing capabilities to students, staff, faculty and other
-researchers at Princeton. 
+The Adroit Cluster at Princeton University offers high powered computing capabilities to students, staff, faculty and other researchers at Princeton. To be granted access to the clusters, first fill out a [registration form](https://forms.rc.princeton.edu/registration/?q=adroit). 
 
-This guide explains how to get up and running with the clusters. The
-process is split into several steps:
+This guide explains how to get up and running with the clusters. The process is split into several steps:
 1. logging into the cluster and navigating to your home folder
 2. cloning a git repository into the cluster
 3. installing software packages and virtual environments
 4. running a job 
 
 ## logging into the cluster and navigation
-First, fill out a [registration form](https://forms.rc.princeton.edu/registration/?q=adroit) for access to the clusters. 
+Logging into the clusters requires using a "secure shell" (or ssh) protocol, which is accessed via the command line on your computer. For example, on a Mac, you can use ssh through your Terminal application. Ssh allows you to log into the clusters remotely, that is, to access the cluster computer from your own computer.
 
-Use ssh (a secure shell) to log into the clusters remotely. See more
-on [logging into the clusters](https://researchcomputing.princeton.edu/systems/adroit#access).
+Read more about ssh here, and see more about logging in with ssh on [the Research Computing docs](https://researchcomputing.princeton.edu/systems/adroit#access).
 
 ```console
 ssh <YourNetID>@adroit.princeton.edu
@@ -47,22 +43,32 @@ First, load up Anaconda to activate python
 module load anaconda3/2023.3
 ```
 
-Then, create a virtual environment. Below is a sample environment you
-might create for machine learning with the `transformers` library.
+Then, create a virtual environment. Below is a sample environment you might create for machine learning with the `transformers` library.
 
 ```console
-conda create --name ml ipykernel transformers transformers[torch] accelerate
-datasets trl --channel conda-forge 
+conda create --name ml ipykernel transformers transformers[torch] datasets trl --channel conda-forge 
 ```
 
-After creating the environment, verify that it exists in the list of
-environments.
+If you want to do GPU computing, you will need a special installation of pytorch (a machine learning library), and then to install other libraries separately.
+
+```console
+conda create --name torch-env pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+Activate the environment using the `conda activate` command followed by the environment name. Then, use the `pip install` command to install the rest of the libraries: `ipykernel` (for ipython) `trl` (for fine-tuning large language models) and `datasets` (for loading datasets from huggingface). 
+
+*NOTE: sometimes we use `conda` and sometimes `pip` to install libraries. That's because some libraries are not always available on conda.*
+
+```console
+pip install ipykernel
+pip install trl
+pip install datasets
+```
+After creating the environment and installing necessary packages, verify that it exists in the list of environments.
 
 ```console
 conda info --envs # list current envs
 ```
-
-Then you can activate your environment.
+You can now deactivate your environment with `conda deactivate [environment name]`. Always remember to reactivate the environment prior to doing any work. 
 
 ```console
 conda activate ml
@@ -181,6 +187,7 @@ TRANSFORMERS_OFFLINE=1
 - [using Jupyter Notebooks on the
 clusters](https://researchcomputing.princeton.edu/support/knowledge-base/jupyter) 
 - [transferring files to/from the clusters](https://researchcomputing.princeton.edu/support/knowledge-base/transfer-files)
+- [installing machine learning software (pytorch) on the clusters](https://researchcomputing.princeton.edu/support/knowledge-base/pytorch)
 
 ## resources about using `transformers` and virtual environments
 - [huggingface installation instructions](https://huggingface.co/docs/transformers/en/installation)
