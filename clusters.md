@@ -187,7 +187,11 @@ TRANSFORMERS_OFFLINE=1
 - [using Jupyter Notebooks on the
 clusters](https://researchcomputing.princeton.edu/support/knowledge-base/jupyter) 
 - [transferring files to/from the clusters](https://researchcomputing.princeton.edu/support/knowledge-base/transfer-files)
+
+## resources on GPU computing at Princeton
 - [installing machine learning software (pytorch) on the clusters](https://researchcomputing.princeton.edu/support/knowledge-base/pytorch)
+- "Introduction to GPU programming" workshop [video](https://mediacentral.princeton.edu/media/t/1_r3ere36s)
+- "Introduction to GPU programming" workshop [Github repo](https://github.com/PrincetonUniversity/gpu_programming_intro)
 
 ## resources about using `transformers` and virtual environments
 - [huggingface installation instructions](https://huggingface.co/docs/transformers/en/installation)
