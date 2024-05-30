@@ -33,17 +33,17 @@ git clone [your-github-repo]
 ```
 
 ## installing software
-To run jobs, you'll need to install the necessary software, like
-python. See more on [installing Python and related
-software](https://researchcomputing.princeton.edu/support/knowledge-base/python)
-on the clusters. 
+To run jobs, you'll need to install the necessary software, like python. See more on [installing Python and related
+software](https://researchcomputing.princeton.edu/support/knowledge-base/python) on the clusters. 
 
 First, load up Anaconda to activate python
 ```console
 module load anaconda3/2023.3
 ```
 
-Then, create a virtual environment. Below is a sample environment you might create for machine learning with the `transformers` library.
+Then, create a virtual environment. A [virtual environment](https://stackoverflow.com/questions/41972261/what-is-a-virtualenv-and-why-should-i-use-one) is a way of installing specific software packages in one place (like a project folder) so that different projects (with versions of software) don't conflict with one another.
+
+Below is a sample environment called `ml` (for "machine learning") you might create that installs the `transformers`, `ipykernel`, `datasets`, and `trl` python libraries.
 
 ```console
 conda create --name ml ipykernel transformers transformers[torch] datasets trl --channel conda-forge 
